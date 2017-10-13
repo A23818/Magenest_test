@@ -1,0 +1,60 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+#menu
+{
+  	height:40px;
+	background-color:#FC9;
+	margin:5px 0px;
+}
+#menu ul
+{
+	list-style:none;
+}
+#menu ul li
+{
+	float:left;	
+	border-right:1px dotted #999;
+	position:relative;
+}
+#menu ul li:last-child
+{
+	border:none;
+}
+#menu ul li a
+{
+	text-decoration:none;
+	padding:10px 40px;
+	display:block;
+	white-space:pre; /*sign up*/
+}
+#menu ul li a:hover
+{
+	color:red;
+	background-color:#FF0;
+	border-top:5px blue solid;
+	transition:all 1s 0s linear;
+}
+/* Cap 2 */
+#menu ul ul li
+{
+	float:none;
+	border-right:none;
+	border-bottom:1px dotted #999;
+}
+#menu ul ul
+{
+	background-color:#0FF;
+	position:absolute;
+	top:100%;
+	left:0;
+	z-index:1000;
+	display:none;
+}
+#menu ul li:hover > ul
+{
+	display:block;
+}
